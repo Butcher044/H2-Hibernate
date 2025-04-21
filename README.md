@@ -9,11 +9,11 @@
 [![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)](https://maven.apache.org/)
 [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://jwt.io/)
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" title="Spring" alt="Spring" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" title="Spring" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" width="40" height="40"/>&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" width="40" height="40"/>
 
 > 📚 Курсовая работа по дисциплине «Современные технологии программирования»  
 > 👨‍🎓 Выполнил студент 3-его курса группы ПИ22-1 Косарев Григорий
@@ -97,13 +97,6 @@ graph TD
     G --> L[Контроллеры]
     H --> M[Сервисы]
     I --> N[Репозитории]
-
-    style A fill:#f9f,stroke:#333,stroke-width:4px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#fbf,stroke:#333,stroke-width:2px
-    
-    classDef highlight fill:#f96,stroke:#333,stroke-width:4px;
-    class A highlight
 ```
 
 ### 🖥 Frontend (course_client)
@@ -126,11 +119,6 @@ graph TD
     
     M[ServerService] --> G
     M --> H
-
-    style A fill:#bbf,stroke:#333,stroke-width:4px
-    style B fill:#ddf,stroke:#333
-    style C fill:#ddf,stroke:#333
-    style D fill:#ddf,stroke:#333
 ```
 
 ### ⚙️ Backend (course_server)
@@ -152,19 +140,10 @@ graph TD
     E --> M[ParkingSpot]
     
     D --> N[JPA Repositories]
-
-    style A fill:#fbf,stroke:#333,stroke-width:4px
-    style B fill:#fdf,stroke:#333
-    style C fill:#fdf,stroke:#333
-    style D fill:#fdf,stroke:#333
 ```
 
 ### 🔄 Процессы системы
 
-<details>
-<summary>📋 Диаграммы процессов</summary>
-
-#### Процесс бронирования
 ```mermaid
 sequenceDiagram
     participant User
@@ -187,7 +166,6 @@ sequenceDiagram
     Frontend->>User: Результат операции
 ```
 
-#### Процесс аутентификации
 ```mermaid
 sequenceDiagram
     participant User
@@ -205,8 +183,6 @@ sequenceDiagram
     Frontend->>User: Доступ к системе
 ```
 
-</details>
-
 ---
 
 ## 🛠 Технологический стек
@@ -217,11 +193,11 @@ sequenceDiagram
 
 | Технология | Версия | Описание | Иконка |
 |------------|---------|----------|---------|
-| Java | 23 | Основной язык программирования | <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg" width="20"/> |
-| JavaFX | 17.0.6 | Создание графического интерфейса | <img src="https://github.com/devicons/devicon/blob/master/icons/javafx/javafx-original.svg" width="20"/> |
+| Java | 23 | Основной язык программирования | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20"/> |
+| JavaFX | 17.0.6 | Создание графического интерфейса | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20"/> |
 | FXML | - | Декларативное описание UI | 📄 |
-| CSS | - | Стилизация интерфейса | <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" width="20"/> |
-| Maven | - | Система сборки проекта | <img src="https://github.com/devicons/devicon/blob/master/icons/maven/maven-original.svg" width="20"/> |
+| CSS | - | Стилизация интерфейса | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="20"/> |
+| Maven | - | Система сборки проекта | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20"/> |
 | Jackson | 2.18.2 | Работа с JSON | 🔄 |
 | JUnit | 5.10.2 | Модульное тестирование | ✅ |
 
@@ -229,12 +205,12 @@ sequenceDiagram
 
 | Технология | Версия | Описание | Иконка |
 |------------|---------|----------|---------|
-| Java | 23 | Основной язык программирования | <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg" width="20"/> |
-| Spring Boot | 3.3.5 | Основной фреймворк | <img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original.svg" width="20"/> |
+| Java | 23 | Основной язык программирования | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20"/> |
+| Spring Boot | 3.3.5 | Основной фреймворк | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="20"/> |
 | Spring Security | - | Безопасность и аутентификация | 🔒 |
 | Spring Data JPA | - | Работа с базой данных | 💾 |
-| MySQL | Latest | СУБД | <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" width="20"/> |
-| Maven | - | Система сборки | <img src="https://github.com/devicons/devicon/blob/master/icons/maven/maven-original.svg" width="20"/> |
+| MySQL | Latest | СУБД | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="20"/> |
+| Maven | - | Система сборки | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="20"/> |
 | Lombok | - | Уменьшение шаблонного кода | 🔧 |
 | JWT | 0.11.5 | Аутентификация и авторизация | 🎫 |
 
