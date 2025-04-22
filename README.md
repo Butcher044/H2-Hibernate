@@ -217,12 +217,7 @@ graph TD
     F -->|Нет| C
     G -->|Данные| H[Резервное копирование]
     H -->|Подтверждение| I[Визуализация результатов]
-    
-    style A fill:#bbf,stroke:#333,stroke-width:2px
-    style D fill:#fbb,stroke:#333,stroke-width:2px
-    style E fill:#bfb,stroke:#333,stroke-width:2px
-    style F fill:#fbf,stroke:#333,stroke-width:2px
-    style G fill:#fdb,stroke:#333,stroke-width:2px
+
 ```
 
 ### 🗃️ Архитектура базы данных
@@ -302,11 +297,6 @@ graph LR
     F -->|Обнаружение проблем| G[Переобучение]
     G --> C
     
-    style A fill:#f9d,stroke:#333,stroke-width:2px
-    style C fill:#bbf,stroke:#333,stroke-width:2px
-    style D fill:#fbb,stroke:#333,stroke-width:2px
-    style E fill:#bfb,stroke:#333,stroke-width:2px
-    style G fill:#fbf,stroke:#333,stroke-width:2px
 ```
 
 ## 🔧 Настройка и запуск
