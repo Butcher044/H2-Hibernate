@@ -41,22 +41,23 @@ graph TD
 
     subgraph "Взаимодействие с БД (JPA/Hibernate)"
         direction TB
-        REPO(UserRepository/RoleRepository <br> *Не показаны, но подразумеваются*) --> |CRUD| DB[(База Данных)]
+        REPO(UserRepository/RoleRepository) --> |CRUD| DB[(База Данных)]
         AUTH_CTRL --> REPO
-        AUTH_MANAGER --> REPO # (через UserDetailsService)
+        AUTH_MANAGER --> REPO
     end
 
     subgraph "Клиенты (client)"
          direction TB
          CLIENT_CTRL(ServiceController) --> |HTTP| EXT_SVC(Другой Микросервис)
-         AUTH_CTRL --> CLIENT_CTRL # Возможная связь
+         AUTH_CTRL --> CLIENT_CTRL
      end
 
     AUTH_CTRL -- Использование --> PWD_ENCODER
     AUTH_CTRL -- Использование --> AUTH_MANAGER
 
-    AUTH_CTRL --> MSG_RESP(MessageResponse) # Ответ о регистрации
+    AUTH_CTRL --> MSG_RESP(MessageResponse)
 
     UTILS -- Генерация/Валидация --> USER
     FILTER -- Загрузка пользователя --> USER
+
 ```
